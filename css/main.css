@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    height: 100vh;
+    background: #75D1CE;
+    margin: 0;
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container {
+    text-align: center;
+    padding: 8em 0;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5em;
+    color: white;
+    margin: 0;
+}
+h2 {
+    font-size: 3em;
+    color: white;
+    margin: 0;
+}
+
+p {
+    font-size: 1.3em;
+    color: white;
+    margin: 0;
+}
+
+
+section {
+    text-align: center;
+    padding: 8em 0;
+    height: 100vh;
+}
+.info {
+    text-align: left;
+    height: 100vh;
+    margin-bottom: 30vh;
+}
+
+.info h1 {
+
+    margin-bottom: 6rem;
+}
+.info h2, p {
+
+    margin-bottom: 3rem;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: visible;
+}
+
+.Baloon {
+    animation: Baloon-anim 500s alternate-reverse linear infinite;
+    
+}
+.Boat {
+    animation: Boat-anim 20s alternate-reverse linear infinite;
+    
+}
+
+.CLOUD1 {
+    animation: cloud-anim 7s alternate-reverse linear infinite;
+}
+.CLOUD2 {
+    animation: cloud-anim 55s alternate-reverse linear infinite;
+}
+.CLOUD3 {
+    animation: cloud-anim 15s alternate-reverse linear infinite;
+}
+.CLOUD4 {
+    animation: cloud-anim 50s alternate-reverse linear infinite;
+}
+.CLOUD5 {
+    animation: cloud-anim 40s alternate-reverse linear infinite;
+}
+
+@keyframes cloud-anim {
+    0% {
+        transform: translateX(0, 0);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+@keyframes Baloon-anim {
+    0% {
+        transform: translate(0, 0);
+    } 50% {
+        transform: translate(60%, 0%);
+    }
+    100% {
+        transform: translate(0%, -20%);
+    }
+}
+@keyframes Boat-anim {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(10%, 0%);
+    }
+}
